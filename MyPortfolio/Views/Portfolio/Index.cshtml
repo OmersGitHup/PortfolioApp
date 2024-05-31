@@ -1,0 +1,64 @@
+﻿@model List<MyPortfolio.DAL_DataAccessLayer_.Portfolio>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Portfolios</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Portfolio List</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-sub">
+                            You can show and rebuild your Portfolios here !
+                        </div>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">SubTitle</th>
+                                    <th scope="col">ImageURL</th>
+                                    <th scope="col">URL</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Delete</th>
+                                    <th scope="col">Update</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+
+                                        <td>@count</td>
+                                        <td>@item.Title</td>
+                                        <td>@item.SubTitle</td>
+                                        <td>@item.ImageUrl</td>
+                                        <td>@item.Url</td>
+                                        <td>@item.Description</td>
+                                        <td><a href="/Portfolio/DeletePortfolio/@item.PortfolioId" class="btn btn-danger">Delete</a></td>
+                                        <td><a href="/Portfolio/UpdatePortfolio/@item.PortfolioId" class="btn btn-success">Update</a></td>
+                                    </tr>
+
+                                }
+
+                            </tbody>
+                        </table>
+                        <a href="/Portfolio/AddNewPortfolio/" class="btn btn-info">Add New Portfolio</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

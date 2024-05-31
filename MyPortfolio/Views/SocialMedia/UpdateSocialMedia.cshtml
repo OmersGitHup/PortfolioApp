@@ -1,0 +1,54 @@
+﻿@model SocialMedia
+@{
+    ViewData["Title"] = "UpdateSocialMedia";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">SocialMedias</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Update Your SocialMedia</div>
+                    </div>
+                    <div class="card-body">
+
+                        <form method="post">
+                            <input type="hidden" asp-for="SocialMediaId" />
+
+                            <label>Title</label>
+                            <input type="text" asp-for="Title" class="form-control" />
+                            <br />
+                            <label>URL</label>
+                            <input type="text" asp-for="Url" class="form-control" />
+                            <br />
+                            <label for="icon">Icon</label>
+                            <select id="icon" name="Icon" class="form-control" asp-for="Icon">
+                                <option value="im im-facebook">Facebook</option>
+                                <option value="im im-instagram">Instagram</option>
+                                <option value="im im-linkedin">LinkedIn</option>
+                                <option value="im im-github">GitHub</option>
+                                <option value="im im-pinterest">Pınterest</option>
+                                <option value="im im-behance">Behance</option>
+                                <option value="im im-twitter">Twitter</option>
+                                <option value="im im-tumblr">Tumblr</option>
+                                <option value="im im-tripadvisor">Tripadvisor</option>
+                            </select>
+                            <br />
+                            <button class="btn btn-warning">Update SocialMedia</button>
+
+
+                        </form>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

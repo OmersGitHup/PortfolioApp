@@ -1,0 +1,51 @@
+﻿@model MyPortfolio.DAL_DataAccessLayer_.Portfolio
+@{
+    ViewData["Title"] = "UpdatePortfolio";
+    Layout = "~/Views/Layout/Index.cshtml";
+    
+}
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Experiences</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Update Your Experience</div>
+                    </div>
+                    <div class="card-body">
+
+                        <form method="post">
+                            <input type="hidden" asp-for="PortfolioId" />
+
+                            <label>Title</label>
+                            <input type="text" asp-for="Title" class="form-control" />
+                            <br />
+                            <label>URL</label>
+                            <input type="text" asp-for="Url" class="form-control" />
+                            <br />
+                            <label>IMG-URL</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control" />
+                            <br />
+                            <label>Description</label>
+                            <input type="text" asp-for="Description" class="form-control" />
+                            <br />
+
+                            <button class="btn btn-warning">Update Portfolio</button>
+
+
+                        </form>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,45 @@
+﻿@model Experience
+@{
+    ViewData["Title"] = "CreateExperience";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Experiences</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Add Your Experience</div>
+                    </div>
+                    <div class="card-body">
+                        
+                        <form method="post">
+                            <label>Experience Head</label>
+                            <input type="text" asp-for="Head" class="form-control" />
+                            <br />
+                            <label>Title</label>
+                            <input type="text" asp-for="Title" class="form-control" />
+                            <br />
+                            <label>Date Range</label>
+                            <input type="text" asp-for="Date" class="form-control" />
+                            <br />                            
+                            <label>Statement</label>
+                            <textarea rows="4" class="form-control" asp-for="Description"></textarea>
+                            <br />
+                            <button class="btn btn-primary">Add Experience</button>
+
+
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

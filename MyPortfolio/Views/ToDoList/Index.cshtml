@@ -1,0 +1,79 @@
+﻿@model List<ToDoList>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layout/Index.cshtml";
+    int count = 0;
+}
+
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">ToDoLists</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">ToDo List</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-sub">
+                            You can control your ToDo List item !
+                        </div>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Content</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Statu</th>
+                                    <th scope="col">Delete</th>
+                                    <th scope="col">Update</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <td>@count</td>
+                                        <td>@item.Title</td>
+                                        @if (item.Date < DateTime.Today)
+                                        {
+                                            <td style="color:red">@item.Date</td>
+
+                                        }
+                                        else if (item.Date == DateTime.Today)
+                                        {
+                                            <td style="color:green">@item.Date</td>
+                                        }else{
+                                            <td >@item.Date</td>
+                                        }
+                                        <td>@item.Date</td>
+                                        @if (item.Status == true)
+                                        {
+                                            <td><a href="/ToDoList/ChangeToDoListStatusToFalse/@item.ToDoListId" class="btn btn-success">Not Done</a></td>
+                                        }
+                                        else
+                                        {
+                                            <td><a href="/ToDoList/ChangeToDoListStatusToTrue/@item.ToDoListId" class="btn btn-danger">Done</a></td>
+                                        }
+                                        <td><a href="/ToDoList/DeleteToDoList/@item.ToDoListId" class="btn btn-danger">Delete</a></td>
+                                        <td><a href="/ToDoList/UpdateToDoList/@item.ToDoListId" class="btn btn-success">Update</a></td>
+                                    </tr>
+                                    
+
+                                }
+
+                            </tbody>
+                        </table>
+                        <a href="/ToDoList/CreateToDoList/" class="btn btn-info">New Item</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

@@ -1,3 +1,4 @@
+# Screenshots
 ![Ekran görüntüsü 2024-07-01 152307](https://github.com/OmersGitHup/PortfolioApp/assets/117158464/3294e232-df19-462a-8fe6-1a5f0f5d4d43)
 ![Ekran görüntüsü 2024-07-01 152320](https://github.com/OmersGitHup/PortfolioApp/assets/117158464/7859c922-1a14-4ec8-b21d-9bdb27a8a341)
 ![Ekran görüntüsü 2024-07-01 152335](https://github.com/OmersGitHup/PortfolioApp/assets/117158464/3a1f7c23-9035-45b9-9921-820874109399)
@@ -7,15 +8,14 @@
 ![Ekran görüntüsü 2024-07-01 162034](https://github.com/OmersGitHup/PortfolioApp/assets/117158464/c337dcd4-7c2a-469b-ac4f-e527d96c0018)
 ![Ekran görüntüsü 2024-07-01 162042](https://github.com/OmersGitHup/PortfolioApp/assets/117158464/c51e114a-513d-4e12-a7d1-33834a0cf0d1)
 
-# Kullandığım Teknolojiler
+# Technologies I Use
 
 ## Back-End / .NET Core
-- Web uygulamaları için .NET Core kullanıyorum.
+- I use .NET Core for web applications.
 
 ## Front-End / HTML-CSS-JS
-- Web arayüzlerini oluşturmak için HTML, CSS ve JavaScript kullanıyorum.
-- Sayfa düzenlemeleri ve stillemeleri üzerinde çalışıyorum.
+- I use HTML, CSS, and JavaScript for building web interfaces.
+- I focus on page layouts and styling.
 
-## Veritabanı / MSSQL
-- Veri depolamak ve yönetmek için MSSQL kullanıyorum.
-
+## Database / MSSQL
+- I use MSSQL for data storage and management.

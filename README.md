@@ -7,8 +7,15 @@
 ![Ekran görüntüsü 2024-07-01 162034](https://github.com/OmersGitHup/PortfolioApp/assets/117158464/c337dcd4-7c2a-469b-ac4f-e527d96c0018)
 ![Ekran görüntüsü 2024-07-01 162042](https://github.com/OmersGitHup/PortfolioApp/assets/117158464/c51e114a-513d-4e12-a7d1-33834a0cf0d1)
 
-KULLANDIĞIM TEKNOLOJİLER
+# Kullandığım Teknolojiler
 
-BACK-END / .NET CORE
-FRONT-END / HTML-CSS-JS
-DATABASE/ MSSQL
+## Back-End / .NET Core
+- Web uygulamaları için .NET Core kullanıyorum.
+
+## Front-End / HTML-CSS-JS
+- Web arayüzlerini oluşturmak için HTML, CSS ve JavaScript kullanıyorum.
+- Sayfa düzenlemeleri ve stillemeleri üzerinde çalışıyorum.
+
+## Veritabanı / MSSQL
+- Veri depolamak ve yönetmek için MSSQL kullanıyorum.
+

@@ -2616,7 +2616,7 @@ html.no-csstransitions .home-content__main {
 
 .s-testimonials {
     background-color: #0D0A0B;
-    background-image: url("/hola-master/images/testimonial-bg.jpg");
+    background-image: url("../images/testimonial-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 9.6rem;
@@ -3041,7 +3041,7 @@ html.no-csstransitions .home-content__main {
 
 .s-contact {
     background-color: #151515;
-    background-image: url("https://i.hizliresim.com/by7rn9u.jpg");
+    background-image: url('https://i.hizliresim.com/pk35nzx.jpg');
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 13.2rem;
